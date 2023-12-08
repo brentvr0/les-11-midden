@@ -7,5 +7,12 @@
     <td>
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-secondary">Edit</a>
         <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger"
+                data-bs-toggle="modal"
+                data-bs-target="DeleteModal"
+                data-id=" @Model.Id">
+            Delete with Modal
+        </button>
     </td>
 </tr>
